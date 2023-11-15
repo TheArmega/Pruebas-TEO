@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>800</width>
+    <width>1177</width>
     <height>600</height>
    </rect>
   </property>
@@ -17,7 +17,7 @@
    <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
-      <x>20</x>
+      <x>440</x>
       <y>10</y>
       <width>311</width>
       <height>17</height>
@@ -30,11 +30,11 @@
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="QPushButton" name="sendPosition_button">
+   <widget class="QPushButton" name="sendPositionRighArm_button">
     <property name="geometry">
      <rect>
-      <x>350</x>
-      <y>370</y>
+      <x>290</x>
+      <y>300</y>
       <width>89</width>
       <height>25</height>
      </rect>
@@ -46,74 +46,74 @@
    <widget class="QLabel" name="label_2">
     <property name="geometry">
      <rect>
-      <x>310</x>
-      <y>150</y>
+      <x>240</x>
+      <y>40</y>
       <width>181</width>
       <height>17</height>
      </rect>
     </property>
     <property name="text">
-     <string>Brazo Derecho</string>
+     <string>Right Arm</string>
     </property>
     <property name="alignment">
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="QLineEdit" name="FrontalRightShoulder_textBox">
+   <widget class="QLineEdit" name="FrontalRightShoulderPosition_textBox">
     <property name="geometry">
      <rect>
-      <x>340</x>
-      <y>180</y>
+      <x>210</x>
+      <y>110</y>
       <width>113</width>
       <height>25</height>
      </rect>
     </property>
    </widget>
-   <widget class="QLineEdit" name="SagittalRightShoulder_textBox">
+   <widget class="QLineEdit" name="SagittalRightShoulderPosition_textBox">
     <property name="geometry">
      <rect>
-      <x>340</x>
-      <y>210</y>
+      <x>210</x>
+      <y>140</y>
       <width>113</width>
       <height>25</height>
      </rect>
     </property>
    </widget>
-   <widget class="QLineEdit" name="AxialRightShoulder_textBox">
+   <widget class="QLineEdit" name="AxialRightShoulderPosition_textBox">
     <property name="geometry">
      <rect>
-      <x>340</x>
-      <y>240</y>
+      <x>210</x>
+      <y>170</y>
       <width>113</width>
       <height>25</height>
      </rect>
     </property>
    </widget>
-   <widget class="QLineEdit" name="FrontalRightElbow_textBox">
+   <widget class="QLineEdit" name="FrontalRightElbowPosition_textBox">
     <property name="geometry">
      <rect>
-      <x>340</x>
-      <y>270</y>
+      <x>210</x>
+      <y>200</y>
       <width>113</width>
       <height>25</height>
      </rect>
     </property>
    </widget>
-   <widget class="QLineEdit" name="AxialRightWrist_textBox">
+   <widget class="QLineEdit" name="AxialRightWristPosition_textBox">
     <property name="geometry">
      <rect>
-      <x>340</x>
-      <y>300</y>
+      <x>210</x>
+      <y>230</y>
       <width>113</width>
       <height>25</height>
      </rect>
     </property>
    </widget>
-   <widget class="QLineEdit" name="FrontalRightWrist_textBox">
+   <widget class="QLineEdit" name="FrontalRightWristPosition_textBox">
     <property name="geometry">
      <rect>
-      <x>340</x>
-      <y>330</y>
+      <x>210</x>
+      <y>260</y>
       <width>113</width>
       <height>25</height>
      </rect>
@@ -122,8 +122,8 @@
    <widget class="QLabel" name="FrontalRightShoulder_label">
     <property name="geometry">
      <rect>
-      <x>150</x>
-      <y>180</y>
+      <x>20</x>
+      <y>110</y>
       <width>181</width>
       <height>17</height>
      </rect>
@@ -138,8 +138,8 @@
    <widget class="QLabel" name="SagittalRightShoulder_label">
     <property name="geometry">
      <rect>
-      <x>150</x>
-      <y>210</y>
+      <x>20</x>
+      <y>140</y>
       <width>181</width>
       <height>17</height>
      </rect>
@@ -154,8 +154,8 @@
    <widget class="QLabel" name="FrontalRightElbow_label">
     <property name="geometry">
      <rect>
-      <x>150</x>
-      <y>270</y>
+      <x>20</x>
+      <y>200</y>
       <width>181</width>
       <height>17</height>
      </rect>
@@ -170,8 +170,8 @@
    <widget class="QLabel" name="AxialRightShoulder_label">
     <property name="geometry">
      <rect>
-      <x>150</x>
-      <y>240</y>
+      <x>20</x>
+      <y>170</y>
       <width>181</width>
       <height>17</height>
      </rect>
@@ -186,8 +186,8 @@
    <widget class="QLabel" name="FrontalRightWrist_label">
     <property name="geometry">
      <rect>
-      <x>150</x>
-      <y>330</y>
+      <x>20</x>
+      <y>260</y>
       <width>181</width>
       <height>17</height>
      </rect>
@@ -202,8 +202,8 @@
    <widget class="QLabel" name="AxialRightWrist_label">
     <property name="geometry">
      <rect>
-      <x>150</x>
-      <y>300</y>
+      <x>20</x>
+      <y>230</y>
       <width>181</width>
       <height>17</height>
      </rect>
@@ -215,13 +215,370 @@
      <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
     </property>
    </widget>
+   <widget class="QLineEdit" name="FrontalRightElbowSpeed_textBox">
+    <property name="geometry">
+     <rect>
+      <x>350</x>
+      <y>200</y>
+      <width>113</width>
+      <height>25</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="SagittalRightShoulderSpeed_textBox">
+    <property name="geometry">
+     <rect>
+      <x>350</x>
+      <y>140</y>
+      <width>113</width>
+      <height>25</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="FrontalRightShoulderSpeed_textBox">
+    <property name="geometry">
+     <rect>
+      <x>350</x>
+      <y>110</y>
+      <width>113</width>
+      <height>25</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="FrontalRightWristSpeed_textBox">
+    <property name="geometry">
+     <rect>
+      <x>350</x>
+      <y>260</y>
+      <width>113</width>
+      <height>25</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="AxialRightShoulderSpeed_textBox">
+    <property name="geometry">
+     <rect>
+      <x>350</x>
+      <y>170</y>
+      <width>113</width>
+      <height>25</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="AxialRightWristSpeed_textBox">
+    <property name="geometry">
+     <rect>
+      <x>350</x>
+      <y>230</y>
+      <width>113</width>
+      <height>25</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>80</y>
+      <width>67</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Position</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>380</x>
+      <y>80</y>
+      <width>67</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Speed</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>760</x>
+      <y>40</y>
+      <width>181</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Left Arm</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>750</x>
+      <y>80</y>
+      <width>67</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Position</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="FrontalLeftShoulderSpeed_textBox">
+    <property name="geometry">
+     <rect>
+      <x>870</x>
+      <y>110</y>
+      <width>113</width>
+      <height>25</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="FrontalLeftWristSpeed_textBox">
+    <property name="geometry">
+     <rect>
+      <x>870</x>
+      <y>260</y>
+      <width>113</width>
+      <height>25</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="SagittalRightShoulder_label_2">
+    <property name="geometry">
+     <rect>
+      <x>540</x>
+      <y>140</y>
+      <width>181</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>SagittalLeftShoulder</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="AxialLeftWristPosition_textBox">
+    <property name="geometry">
+     <rect>
+      <x>730</x>
+      <y>230</y>
+      <width>113</width>
+      <height>25</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="FrontalLeftWristPosition_textBox">
+    <property name="geometry">
+     <rect>
+      <x>730</x>
+      <y>260</y>
+      <width>113</width>
+      <height>25</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_7">
+    <property name="geometry">
+     <rect>
+      <x>900</x>
+      <y>80</y>
+      <width>67</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Speed</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="FrontalLeftElbowSpeed_textBox">
+    <property name="geometry">
+     <rect>
+      <x>870</x>
+      <y>200</y>
+      <width>113</width>
+      <height>25</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="FrontalRightShoulder_label_2">
+    <property name="geometry">
+     <rect>
+      <x>540</x>
+      <y>110</y>
+      <width>181</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>FrontalLeftShoulder</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="FrontalRightWrist_label_2">
+    <property name="geometry">
+     <rect>
+      <x>540</x>
+      <y>260</y>
+      <width>181</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>FrontalLeftWrist</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="AxialLeftWristSpeed_textBox">
+    <property name="geometry">
+     <rect>
+      <x>870</x>
+      <y>230</y>
+      <width>113</width>
+      <height>25</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="AxialLeftShoulderPosition_textBox">
+    <property name="geometry">
+     <rect>
+      <x>730</x>
+      <y>170</y>
+      <width>113</width>
+      <height>25</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="FrontalLeftElbowPosition_textBox">
+    <property name="geometry">
+     <rect>
+      <x>730</x>
+      <y>200</y>
+      <width>113</width>
+      <height>25</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="FrontalLeftShoulderPosition_textBox">
+    <property name="geometry">
+     <rect>
+      <x>730</x>
+      <y>110</y>
+      <width>113</width>
+      <height>25</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="sendPositionLeftArm_button">
+    <property name="geometry">
+     <rect>
+      <x>810</x>
+      <y>300</y>
+      <width>89</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Enviar</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="SagittalLeftShoulderSpeed_textBox">
+    <property name="geometry">
+     <rect>
+      <x>870</x>
+      <y>140</y>
+      <width>113</width>
+      <height>25</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="AxialLeftShoulderSpeed_textBox">
+    <property name="geometry">
+     <rect>
+      <x>870</x>
+      <y>170</y>
+      <width>113</width>
+      <height>25</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="AxialRightWrist_label_2">
+    <property name="geometry">
+     <rect>
+      <x>540</x>
+      <y>230</y>
+      <width>181</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>AxialLeftWrist</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="FrontalRightElbow_label_2">
+    <property name="geometry">
+     <rect>
+      <x>540</x>
+      <y>200</y>
+      <width>181</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>FrontalLeftElbow</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="SagittalLeftShoulderPosition_textBox">
+    <property name="geometry">
+     <rect>
+      <x>730</x>
+      <y>140</y>
+      <width>113</width>
+      <height>25</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="AxialRightShoulder_label_2">
+    <property name="geometry">
+     <rect>
+      <x>540</x>
+      <y>170</y>
+      <width>181</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>AxialLeftShoulder</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+    </property>
+   </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>800</width>
+     <width>1177</width>
      <height>22</height>
     </rect>
    </property>

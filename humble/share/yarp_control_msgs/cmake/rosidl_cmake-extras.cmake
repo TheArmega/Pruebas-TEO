@@ -1,4 +1,0 @@
-# generated from rosidl_cmake/cmake/rosidl_cmake-extras.cmake.in
-
-set(yarp_control_msgs_IDL_FILES "srv/SetControlModes.idl;srv/GetControlModes.idl;srv/GetPosition.idl;srv/GetVelocity.idl;srv/GetAvailableControlModes.idl;srv/GetJointsNames.idl;msg/Position.idl;msg/Velocity.idl;msg/PositionDirect.idl")
-set(yarp_control_msgs_INTERFACE_FILES "srv/SetControlModes.srv;srv/SetControlModes_Request.msg;srv/SetControlModes_Response.msg;srv/GetControlModes.srv;srv/GetControlModes_Request.msg;srv/GetControlModes_Response.msg;srv/GetPosition.srv;srv/GetPosition_Request.msg;srv/GetPosition_Response.msg;srv/GetVelocity.srv;srv/GetVelocity_Request.msg;srv/GetVelocity_Response.msg;srv/GetAvailableControlModes.srv;srv/GetAvailableControlModes_Request.msg;srv/GetAvailableControlModes_Response.msg;srv/GetJointsNames.srv;srv/GetJointsNames_Request.msg;srv/GetJointsNames_Response.msg;msg/Position.msg;msg/Velocity.msg;msg/PositionDirect.msg")

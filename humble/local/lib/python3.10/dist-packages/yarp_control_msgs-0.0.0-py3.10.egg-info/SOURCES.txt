@@ -1,6 +1,0 @@
-setup.py
-yarp_control_msgs/__init__.py
-yarp_control_msgs.egg-info/PKG-INFO
-yarp_control_msgs.egg-info/SOURCES.txt
-yarp_control_msgs.egg-info/dependency_links.txt
-yarp_control_msgs.egg-info/top_level.txt

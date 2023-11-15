@@ -1,0 +1,5 @@
+
+# response: a brief string used to signal the state of the result of the request
+# opt_descr: An optional human readable description of the result of the request
+string response "NOT_SPECIFIED"
+string opt_descr

@@ -1,0 +1,2 @@
+designer -- Para abrir el panel de diseño de qt
+pyuic5 -x ventana.ui -o ventana_ui.py -- Para compilar la interfaz

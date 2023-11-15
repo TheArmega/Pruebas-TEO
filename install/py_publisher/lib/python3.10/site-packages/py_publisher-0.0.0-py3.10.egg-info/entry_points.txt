@@ -1,0 +1,4 @@
+[console_scripts]
+hola = py_publisher.logica_ventana:main
+listener = py_publisher.subscriber_member_function:main
+

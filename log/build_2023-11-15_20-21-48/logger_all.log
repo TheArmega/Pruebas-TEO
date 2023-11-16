@@ -1,0 +1,127 @@
+[3.025s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[3.025s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=3, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7fb715446590>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7fb7158b1ff0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7fb7158b1ff0>>)
+[3.169s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[3.169s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[3.169s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[3.169s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[3.169s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[3.170s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[3.170s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/armega/ros2_ws'
+[3.170s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[3.170s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[3.170s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[3.171s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[3.171s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[3.171s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[3.171s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[3.171s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[3.171s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[3.196s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[3.197s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[3.197s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[3.197s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[3.197s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[3.198s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[3.198s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[3.198s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[3.198s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[3.199s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[3.199s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[3.199s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[3.199s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[3.200s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[3.200s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[3.200s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[3.200s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[3.201s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[3.201s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[3.201s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[3.201s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[3.201s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[3.201s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[3.201s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[3.202s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[3.202s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[3.202s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[3.202s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[3.202s] Level 1:colcon.colcon_core.package_identification:_identify(src/py_publisher) by extensions ['ignore', 'ignore_ament_install']
+[3.202s] Level 1:colcon.colcon_core.package_identification:_identify(src/py_publisher) by extension 'ignore'
+[3.202s] Level 1:colcon.colcon_core.package_identification:_identify(src/py_publisher) by extension 'ignore_ament_install'
+[3.203s] Level 1:colcon.colcon_core.package_identification:_identify(src/py_publisher) by extensions ['colcon_pkg']
+[3.203s] Level 1:colcon.colcon_core.package_identification:_identify(src/py_publisher) by extension 'colcon_pkg'
+[3.203s] Level 1:colcon.colcon_core.package_identification:_identify(src/py_publisher) by extensions ['colcon_meta']
+[3.203s] Level 1:colcon.colcon_core.package_identification:_identify(src/py_publisher) by extension 'colcon_meta'
+[3.203s] Level 1:colcon.colcon_core.package_identification:_identify(src/py_publisher) by extensions ['ros']
+[3.203s] Level 1:colcon.colcon_core.package_identification:_identify(src/py_publisher) by extension 'ros'
+[3.210s] DEBUG:colcon.colcon_core.package_identification:Package 'src/py_publisher' with type 'ros.ament_python' and name 'py_publisher'
+[3.210s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[3.210s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[3.211s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[3.211s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[3.211s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[3.479s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[3.480s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[3.577s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 1 installed packages in /home/armega/ros2_ws/install
+[3.625s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 272 installed packages in /opt/ros/humble
+[3.630s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[3.929s] Level 5:colcon.colcon_core.verb:set package 'py_publisher' build argument 'cmake_args' from command line to 'None'
+[3.929s] Level 5:colcon.colcon_core.verb:set package 'py_publisher' build argument 'cmake_target' from command line to 'None'
+[3.930s] Level 5:colcon.colcon_core.verb:set package 'py_publisher' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[3.930s] Level 5:colcon.colcon_core.verb:set package 'py_publisher' build argument 'cmake_clean_cache' from command line to 'False'
+[3.930s] Level 5:colcon.colcon_core.verb:set package 'py_publisher' build argument 'cmake_clean_first' from command line to 'False'
+[3.930s] Level 5:colcon.colcon_core.verb:set package 'py_publisher' build argument 'cmake_force_configure' from command line to 'False'
+[3.930s] Level 5:colcon.colcon_core.verb:set package 'py_publisher' build argument 'ament_cmake_args' from command line to 'None'
+[3.930s] Level 5:colcon.colcon_core.verb:set package 'py_publisher' build argument 'catkin_cmake_args' from command line to 'None'
+[3.930s] Level 5:colcon.colcon_core.verb:set package 'py_publisher' build argument 'catkin_skip_building_tests' from command line to 'False'
+[3.930s] DEBUG:colcon.colcon_core.verb:Building package 'py_publisher' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/armega/ros2_ws/build/py_publisher', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/armega/ros2_ws/install/py_publisher', 'merge_install': False, 'path': '/home/armega/ros2_ws/src/py_publisher', 'symlink_install': False, 'test_result_base': None}
+[3.976s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[4.021s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[4.022s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/armega/ros2_ws/src/py_publisher' with build type 'ament_python'
+[4.022s] Level 1:colcon.colcon_core.shell:create_environment_hook('py_publisher', 'ament_prefix_path')
+[4.077s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[4.077s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/armega/ros2_ws/install/py_publisher/share/py_publisher/hook/ament_prefix_path.ps1'
+[4.080s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/armega/ros2_ws/install/py_publisher/share/py_publisher/hook/ament_prefix_path.dsv'
+[4.081s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/armega/ros2_ws/install/py_publisher/share/py_publisher/hook/ament_prefix_path.sh'
+[4.134s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[4.135s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[4.972s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/armega/ros2_ws/src/py_publisher'
+[5.022s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[5.022s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[6.053s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/armega/ros2_ws/src/py_publisher': PYTHONPATH=/home/armega/ros2_ws/build/py_publisher/prefix_override:/home/armega/ros2_ws/install/py_publisher/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/py_publisher build --build-base /home/armega/ros2_ws/build/py_publisher/build install --record /home/armega/ros2_ws/build/py_publisher/install.log --single-version-externally-managed
+[6.816s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/armega/ros2_ws/src/py_publisher' returned '0': PYTHONPATH=/home/armega/ros2_ws/build/py_publisher/prefix_override:/home/armega/ros2_ws/install/py_publisher/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/py_publisher build --build-base /home/armega/ros2_ws/build/py_publisher/build install --record /home/armega/ros2_ws/build/py_publisher/install.log --single-version-externally-managed
+[6.856s] Level 1:colcon.colcon_core.environment:checking '/home/armega/ros2_ws/install/py_publisher' for CMake module files
+[6.858s] Level 1:colcon.colcon_core.environment:checking '/home/armega/ros2_ws/install/py_publisher' for CMake config files
+[6.860s] Level 1:colcon.colcon_core.environment:checking '/home/armega/ros2_ws/install/py_publisher/lib'
+[6.861s] Level 1:colcon.colcon_core.environment:checking '/home/armega/ros2_ws/install/py_publisher/bin'
+[6.862s] Level 1:colcon.colcon_core.environment:checking '/home/armega/ros2_ws/install/py_publisher/lib/pkgconfig/py_publisher.pc'
+[6.863s] Level 1:colcon.colcon_core.environment:checking '/home/armega/ros2_ws/install/py_publisher/lib/python3.10/site-packages'
+[6.864s] Level 1:colcon.colcon_core.shell:create_environment_hook('py_publisher', 'pythonpath')
+[6.910s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/armega/ros2_ws/install/py_publisher/share/py_publisher/hook/pythonpath.ps1'
+[6.914s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/armega/ros2_ws/install/py_publisher/share/py_publisher/hook/pythonpath.dsv'
+[6.917s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/armega/ros2_ws/install/py_publisher/share/py_publisher/hook/pythonpath.sh'
+[6.919s] Level 1:colcon.colcon_core.environment:checking '/home/armega/ros2_ws/install/py_publisher/bin'
+[6.920s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(py_publisher)
+[6.967s] INFO:colcon.colcon_core.shell:Creating package script '/home/armega/ros2_ws/install/py_publisher/share/py_publisher/package.ps1'
+[6.971s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/armega/ros2_ws/install/py_publisher/share/py_publisher/package.dsv'
+[6.973s] INFO:colcon.colcon_core.shell:Creating package script '/home/armega/ros2_ws/install/py_publisher/share/py_publisher/package.sh'
+[6.976s] INFO:colcon.colcon_core.shell:Creating package script '/home/armega/ros2_ws/install/py_publisher/share/py_publisher/package.bash'
+[6.979s] INFO:colcon.colcon_core.shell:Creating package script '/home/armega/ros2_ws/install/py_publisher/share/py_publisher/package.zsh'
+[6.982s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/armega/ros2_ws/install/py_publisher/share/colcon-core/packages/py_publisher)
+[6.986s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[6.987s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[6.987s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[6.987s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[7.083s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[7.084s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[7.084s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[7.122s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[7.193s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/armega/ros2_ws/install/local_setup.ps1'
+[7.196s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/armega/ros2_ws/install/_local_setup_util_ps1.py'
+[7.201s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/armega/ros2_ws/install/setup.ps1'
+[7.264s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/armega/ros2_ws/install/local_setup.sh'
+[7.267s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/armega/ros2_ws/install/_local_setup_util_sh.py'
+[7.270s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/armega/ros2_ws/install/setup.sh'
+[7.321s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/armega/ros2_ws/install/local_setup.bash'
+[7.323s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/armega/ros2_ws/install/setup.bash'
+[7.377s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/armega/ros2_ws/install/local_setup.zsh'
+[7.379s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/armega/ros2_ws/install/setup.zsh'

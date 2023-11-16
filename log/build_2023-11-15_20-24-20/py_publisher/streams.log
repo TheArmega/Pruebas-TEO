@@ -1,0 +1,27 @@
+[2.016s] Invoking command in '/home/armega/ros2_ws/src/py_publisher': PYTHONPATH=/home/armega/ros2_ws/build/py_publisher/prefix_override:/home/armega/ros2_ws/install/py_publisher/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/py_publisher build --build-base /home/armega/ros2_ws/build/py_publisher/build install --record /home/armega/ros2_ws/build/py_publisher/install.log --single-version-externally-managed
+[2.667s] running egg_info
+[2.671s] writing ../../build/py_publisher/py_publisher.egg-info/PKG-INFO
+[2.673s] writing dependency_links to ../../build/py_publisher/py_publisher.egg-info/dependency_links.txt
+[2.677s] writing entry points to ../../build/py_publisher/py_publisher.egg-info/entry_points.txt
+[2.680s] writing requirements to ../../build/py_publisher/py_publisher.egg-info/requires.txt
+[2.683s] writing top-level names to ../../build/py_publisher/py_publisher.egg-info/top_level.txt
+[2.689s] reading manifest file '../../build/py_publisher/py_publisher.egg-info/SOURCES.txt'
+[2.693s] writing manifest file '../../build/py_publisher/py_publisher.egg-info/SOURCES.txt'
+[2.695s] running build
+[2.696s] running build_py
+[2.699s] copying py_publisher/subscriber_member_function.py -> /home/armega/ros2_ws/build/py_publisher/build/lib/py_publisher
+[2.704s] running install
+[2.705s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[2.705s]   warnings.warn(
+[2.707s] running install_lib
+[2.710s] copying /home/armega/ros2_ws/build/py_publisher/build/lib/py_publisher/subscriber_member_function.py -> /home/armega/ros2_ws/install/py_publisher/lib/python3.10/site-packages/py_publisher
+[2.712s] byte-compiling /home/armega/ros2_ws/install/py_publisher/lib/python3.10/site-packages/py_publisher/subscriber_member_function.py to subscriber_member_function.cpython-310.pyc
+[2.714s] running install_data
+[2.715s] running install_egg_info
+[2.718s] removing '/home/armega/ros2_ws/install/py_publisher/lib/python3.10/site-packages/py_publisher-0.0.0-py3.10.egg-info' (and everything under it)
+[2.719s] Copying ../../build/py_publisher/py_publisher.egg-info to /home/armega/ros2_ws/install/py_publisher/lib/python3.10/site-packages/py_publisher-0.0.0-py3.10.egg-info
+[2.722s] running install_scripts
+[2.769s] Installing hola script to /home/armega/ros2_ws/install/py_publisher/lib/py_publisher
+[2.769s] Installing listener script to /home/armega/ros2_ws/install/py_publisher/lib/py_publisher
+[2.770s] writing list of installed files to '/home/armega/ros2_ws/build/py_publisher/install.log'
+[2.823s] Invoked command in '/home/armega/ros2_ws/src/py_publisher' returned '0': PYTHONPATH=/home/armega/ros2_ws/build/py_publisher/prefix_override:/home/armega/ros2_ws/install/py_publisher/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/py_publisher build --build-base /home/armega/ros2_ws/build/py_publisher/build install --record /home/armega/ros2_ws/build/py_publisher/install.log --single-version-externally-managed

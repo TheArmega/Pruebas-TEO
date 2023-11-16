@@ -1,0 +1,3 @@
+[0.258s] Invoking command in '/home/armega/ros2_ws/build/gtest_vendor': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/armega/ros2_ws/install/py_publisher /usr/bin/cmake /home/armega/ros2_ws/humble/share/gtest_vendor -DCMAKE_INSTALL_PREFIX=/home/armega/ros2_ws/install/gtest_vendor
+[0.384s] [0mCMake Error: The source directory "/home/armega/ros2_ws/humble/share/gtest_vendor" does not appear to contain CMakeLists.txt.
+[0.384s] Specify --help for usage, or press the help button on the CMake GUI.[0m

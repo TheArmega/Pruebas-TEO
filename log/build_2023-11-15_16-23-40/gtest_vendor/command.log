@@ -1,0 +1,1 @@
+Invoking command in '/home/armega/ros2_ws/build/gtest_vendor': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/armega/ros2_ws/install/py_publisher /usr/bin/cmake /home/armega/ros2_ws/humble/share/gtest_vendor -DCMAKE_INSTALL_PREFIX=/home/armega/ros2_ws/install/gtest_vendor

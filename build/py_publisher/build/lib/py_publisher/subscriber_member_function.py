@@ -16,7 +16,7 @@ import rclpy
 from rclpy.node import Node
 
 import math
-
+import itertools
 
 from yarp_control_msgs.msg import Position
 
@@ -34,13 +34,42 @@ class MinimalSubscriber(Node):
             self.publish_position
         )
 
+    def publishRightArmPosition(self, rightArmPositions, rightArmSpeeds):
+        msg = Position()
+        for position, speed in zip(rightArmPositions, rightArmSpeeds):
+            if (position != ''):
+                articulation = f'{position=}'.split('_')[0]
+                msg.names = ['FrontalRightShoulder']
+                msg.positions = [float(position) * (math.pi/180)]
+                msg.ref_velocities = [float(speed)]
+                self.rightArm_publisher_.publish(msg)
+
+
     def prueba(self,
                 FrontalRightShoulder_position,
                 SagittalRightShoulder_position,
                 AxialRightShoulder_position,
                 FrontalRightElbow_position,
                 AxialRightWrist_position,
-                FrontalRightWrist_position
+                FrontalRightWrist_position,
+                FrontalRightShoulder_speed,
+                SagittalRightShoulder_speed,
+                AxialRightShoulder_speed, 
+                FrontalRightElbow_speed,  
+                AxialRightWrist_speed,   
+                FrontalRightWrist_speed,
+                FrontalLeftShoulder_position,
+                SagittalLeftShoulder_position,
+                AxialLeftShoulder_position,
+                FrontalLeftElbow_position,  
+                AxialLeftWrist_position,   
+                FrontalLeftWrist_position,     
+                FrontalLeftShoulder_speed,
+                SagittalLeftShoulder_speed,
+                AxialLeftShoulder_speed,
+                FrontalLeftElbow_speed,  
+                AxialLeftWrist_speed,   
+                FrontalLeftWrist_speed
                ):
         if(FrontalRightShoulder_position != ''):
             position = Position()

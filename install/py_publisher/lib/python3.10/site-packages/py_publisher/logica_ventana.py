@@ -11,15 +11,40 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         self.setupUi(self)
         self.subscriber = MinimalSubscriber()
         self.initUI()
-        self.onClick()
-        self.cleanPositionTextBox()
+        self.onClickRightArm_button()
+        self.onClickLeftArm_button()
+        self.cleanRightArmTextBox()
+        self.cleanLeftArmTextBox()
+        self.headPositionTexBoxes = []
+        self.headSpeedsTexBoxes = []
+        self.rightArmPositionTexBoxes = []
+        self.rightArmSpeedTexBoxes = []
+        self.leftArmPositionTexBoxes = []
+        self.leftArmSpeedTexBoxes = []
+        self.trunkPositionTexBoxes = []
+        self.trunkSpeedTexBoxes = []
+        self.rightPositionLegTexBoxes = []
+        self.rightSpeedLegTexBoxes = []
+        self.leftLegPositionTexBoxes = []
+        self.leftLegSpeedTexBoxes = []
         
 
     def initUI(self):
-        self.sendPositionRighArm_button.clicked.connect(self.onClick)
+        self.sendPositionRightArm_button.clicked.connect(self.onClickRightArm_button)
+        self.sendPositionLeftArm_button.clicked.connect(self.onClickLeftArm_button)
         self.show()
 
-    def onClick(self):
+    def onClickRightArm_button(self):
+        
+        rightArmArticulations = [
+            'FrontalRightShoulder', 
+            'SagittalRightShoulder',
+            'AxialRightShoulder',
+            'FrontalRightElbow',  
+            'AxialRightWrist',   
+            'FrontalRightWrist'    
+        ]
+
         FrontalRightShoulder_position   = self.FrontalRightShoulderPosition_textBox.text()
         SagittalRightShoulder_position  = self.SagittalRightShoulderPosition_textBox.text()
         AxialRightShoulder_position     = self.AxialRightShoulderPosition_textBox.text()
@@ -27,13 +52,14 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         AxialRightWrist_position        = self.AxialRightWristPosition_textBox.text()
         FrontalRightWrist_position      = self.FrontalRightWristPosition_textBox.text()
 
-        rightArmPositions = [FrontalRightShoulder_position,
+        rightArmPositions = [
+                             FrontalRightShoulder_position,
                              SagittalRightShoulder_position,
                              AxialRightShoulder_position,
                              FrontalRightElbow_position,
                              AxialRightWrist_position,
                              FrontalRightWrist_position
-                             ]
+        ]
 
         FrontalRightShoulder_speed   = self.FrontalRightShoulderSpeed_textBox.text()
         SagittalRightShoulder_speed  = self.SagittalRightShoulderSpeed_textBox.text()
@@ -42,13 +68,52 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         AxialRightWrist_speed        = self.AxialRightWristSpeed_textBox.text()
         FrontalRightWrist_speed      = self.FrontalRightWristSpeed_textBox.text()
 
-        rightArmSpeeds = [FrontalRightShoulder_speed,
-                             SagittalRightShoulder_speed,
-                             AxialRightShoulder_speed,
-                             FrontalRightElbow_speed,
-                             AxialRightWrist_speed,
-                             FrontalRightWrist_speed
-                             ]
+        rightArmSpeeds = [
+                         FrontalRightShoulder_speed,
+                         SagittalRightShoulder_speed,
+                         AxialRightShoulder_speed,
+                         FrontalRightElbow_speed,
+                         AxialRightWrist_speed,
+                         FrontalRightWrist_speed
+        ]
+        
+        self.rightArmPositionTexBoxes = [
+            self.FrontalRightShoulderPosition_textBox,
+            self.SagittalRightShoulderPosition_textBox,
+            self.AxialRightShoulderPosition_textBox,
+            self.FrontalRightElbowPosition_textBox,
+            self.AxialRightWristPosition_textBox,
+            self.FrontalRightWristPosition_textBox
+        ]
+
+        self.rightArmSpeedTexBoxes = [
+            self.FrontalRightShoulderSpeed_textBox,
+            self.SagittalRightShoulderSpeed_textBox,
+            self.AxialRightShoulderSpeed_textBox,
+            self.FrontalRightElbowSpeed_textBox,
+            self.AxialRightWristSpeed_textBox,
+            self.FrontalRightWristSpeed_textBox
+        ]
+        
+        self.subscriber.publishArmPosition(
+            rightArmArticulations,
+            rightArmPositions,
+            rightArmSpeeds,
+            'right'
+        )
+
+        self.cleanRightArmTextBox()
+        
+    def onClickLeftArm_button(self):
+
+        leftArmArticulations = [
+            'FrontalLeftShoulder', 
+            'SagittalLeftShoulder',
+            'AxialLeftShoulder',
+            'FrontalLeftElbow',  
+            'AxialLeftWrist',   
+            'FrontalLeftWrist'    
+        ]
 
         FrontalLeftShoulder_position   = self.FrontalLeftShoulderPosition_textBox.text()
         SagittalLeftShoulder_position  = self.SagittalLeftShoulderPosition_textBox.text()
@@ -57,6 +122,14 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         AxialLeftWrist_position        = self.AxialLeftWristPosition_textBox.text()
         FrontalLeftWrist_position      = self.FrontalLeftWristPosition_textBox.text()
 
+        leftArmPositions = [FrontalLeftShoulder_position,
+                             SagittalLeftShoulder_position,
+                             AxialLeftShoulder_position,
+                             FrontalLeftElbow_position,
+                             AxialLeftWrist_position,
+                             FrontalLeftWrist_position
+                             ]
+
         FrontalLeftShoulder_speed   = self.FrontalLeftShoulderSpeed_textBox.text()
         SagittalLeftShoulder_speed  = self.SagittalLeftShoulderSpeed_textBox.text()
         AxialLeftShoulder_speed     = self.AxialLeftShoulderSpeed_textBox.text()
@@ -64,53 +137,57 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         AxialLeftWrist_speed        = self.AxialLeftWristSpeed_textBox.text()
         FrontalLeftWrist_speed      = self.FrontalLeftWristSpeed_textBox.text()
 
+        leftArmSpeeds = [FrontalLeftShoulder_speed,
+                         SagittalLeftShoulder_speed,
+                         AxialLeftShoulder_speed,
+                         FrontalLeftElbow_speed,
+                         AxialLeftWrist_speed,
+                         FrontalLeftWrist_speed
+                         ]
 
-        self.subscriber.publishRightArmPosition(
-            rightArmPositions,
-            rightArmSpeeds
+        self.leftArmPositionTexBoxes = [
+            self.FrontalLeftShoulderPosition_textBox,
+            self.SagittalLeftShoulderPosition_textBox,
+            self.AxialLeftShoulderPosition_textBox,
+            self.FrontalLeftElbowPosition_textBox,
+            self.AxialLeftWristPosition_textBox,
+            self.FrontalLeftWristPosition_textBox
+        ]
+
+        self.leftArmSpeedTexBoxes = [
+            self.FrontalLeftShoulderSpeed_textBox,
+            self.SagittalLeftShoulderSpeed_textBox,
+            self.AxialLeftShoulderSpeed_textBox,
+            self.FrontalLeftElbowSpeed_textBox,
+            self.AxialLeftWristSpeed_textBox,
+            self.FrontalLeftWristSpeed_textBox
+        ]
+
+        self.subscriber.publishArmPosition(
+            leftArmArticulations,
+            leftArmPositions,
+            leftArmSpeeds,
+            'left'
         )
-        '''
-        self.subscriber.prueba(
-            rightArmPositions,
-            FrontalRightShoulder_speed,
-            SagittalRightShoulder_speed,
-            AxialRightShoulder_speed, 
-            FrontalRightElbow_speed,  
-            AxialRightWrist_speed,   
-            FrontalRightWrist_speed,
-            FrontalLeftShoulder_position,
-            SagittalLeftShoulder_position,
-            AxialLeftShoulder_position,
-            FrontalLeftElbow_position,  
-            AxialLeftWrist_position,   
-            FrontalLeftWrist_position,     
-            FrontalLeftShoulder_speed,
-            SagittalLeftShoulder_speed,
-            AxialLeftShoulder_speed,
-            FrontalLeftElbow_speed,  
-            AxialLeftWrist_speed,   
-            FrontalLeftWrist_speed 
-        )
-        '''
 
-        self.cleanPositionTextBox()
+        self.cleanLeftArmTextBox()
 
-    def cleanPositionTextBox(self):
-        self.FrontalRightShoulderPosition_textBox.clear()
-        self.SagittalRightShoulderPosition_textBox.clear()
-        self.AxialRightShoulderPosition_textBox.clear()
-        self.FrontalRightElbowPosition_textBox.clear()
-        self.AxialRightWristPosition_textBox.clear()
-        self.FrontalRightWristPosition_textBox.clear()
+    def cleanRightArmTextBox(self):
 
-        self.FrontalRightShoulderSpeed_textBox.clear()
-        self.SagittalRightShoulderSpeed_textBox.clear()
-        self.AxialRightShoulderSpeed_textBox.clear()
-        self.FrontalRightElbowSpeed_textBox.clear()
-        self.AxialRightWristSpeed_textBox.clear()
-        self.FrontalRightWristSpeed_textBox.clear()
+        for i in self.rightArmPositionTexBoxes:
+            i.clear()
 
-#if __name__ == "__main__":
+        for i in self.rightArmSpeedTexBoxes:
+            i.clear()
+        
+    def cleanLeftArmTextBox(self):
+
+        for i in self.leftArmPositionTexBoxes:
+            i.clear()
+
+        for i in self.leftArmSpeedTexBoxes:
+            i.clear()      
+        
 def main(args=None):
     rclpy.init(args=args)
     app = QtWidgets.QApplication([])

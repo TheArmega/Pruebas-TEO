@@ -1,0 +1,30 @@
+[0.645s] Invoking command in '/home/teo/ros2_ws/src/py_publisher': PYTHONPATH=/home/teo/ros2_ws/build/py_publisher/prefix_override:/home/teo/ros2_ws/install/py_publisher/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/py_publisher build --build-base /home/teo/ros2_ws/build/py_publisher/build install --record /home/teo/ros2_ws/build/py_publisher/install.log --single-version-externally-managed
+[0.846s] running egg_info
+[0.846s] writing ../../build/py_publisher/py_publisher.egg-info/PKG-INFO
+[0.847s] writing dependency_links to ../../build/py_publisher/py_publisher.egg-info/dependency_links.txt
+[0.847s] writing entry points to ../../build/py_publisher/py_publisher.egg-info/entry_points.txt
+[0.847s] writing requirements to ../../build/py_publisher/py_publisher.egg-info/requires.txt
+[0.847s] writing top-level names to ../../build/py_publisher/py_publisher.egg-info/top_level.txt
+[0.848s] reading manifest file '../../build/py_publisher/py_publisher.egg-info/SOURCES.txt'
+[0.849s] writing manifest file '../../build/py_publisher/py_publisher.egg-info/SOURCES.txt'
+[0.849s] running build
+[0.849s] running build_py
+[0.849s] copying py_publisher/subscriber_member_function.py -> /home/teo/ros2_ws/build/py_publisher/build/lib/py_publisher
+[0.850s] copying py_publisher/logica_ventana.py -> /home/teo/ros2_ws/build/py_publisher/build/lib/py_publisher
+[0.850s] running install
+[0.850s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[0.850s]   warnings.warn(
+[0.850s] running install_lib
+[0.851s] copying /home/teo/ros2_ws/build/py_publisher/build/lib/py_publisher/subscriber_member_function.py -> /home/teo/ros2_ws/install/py_publisher/lib/python3.10/site-packages/py_publisher
+[0.851s] copying /home/teo/ros2_ws/build/py_publisher/build/lib/py_publisher/logica_ventana.py -> /home/teo/ros2_ws/install/py_publisher/lib/python3.10/site-packages/py_publisher
+[0.851s] byte-compiling /home/teo/ros2_ws/install/py_publisher/lib/python3.10/site-packages/py_publisher/subscriber_member_function.py to subscriber_member_function.cpython-310.pyc
+[0.853s] byte-compiling /home/teo/ros2_ws/install/py_publisher/lib/python3.10/site-packages/py_publisher/logica_ventana.py to logica_ventana.cpython-310.pyc
+[0.854s] running install_data
+[0.855s] running install_egg_info
+[0.857s] removing '/home/teo/ros2_ws/install/py_publisher/lib/python3.10/site-packages/py_publisher-0.0.0-py3.10.egg-info' (and everything under it)
+[0.857s] Copying ../../build/py_publisher/py_publisher.egg-info to /home/teo/ros2_ws/install/py_publisher/lib/python3.10/site-packages/py_publisher-0.0.0-py3.10.egg-info
+[0.858s] running install_scripts
+[0.875s] Installing hola script to /home/teo/ros2_ws/install/py_publisher/lib/py_publisher
+[0.875s] Installing listener script to /home/teo/ros2_ws/install/py_publisher/lib/py_publisher
+[0.875s] writing list of installed files to '/home/teo/ros2_ws/build/py_publisher/install.log'
+[0.897s] Invoked command in '/home/teo/ros2_ws/src/py_publisher' returned '0': PYTHONPATH=/home/teo/ros2_ws/build/py_publisher/prefix_override:/home/teo/ros2_ws/install/py_publisher/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/py_publisher build --build-base /home/teo/ros2_ws/build/py_publisher/build install --record /home/teo/ros2_ws/build/py_publisher/install.log --single-version-externally-managed

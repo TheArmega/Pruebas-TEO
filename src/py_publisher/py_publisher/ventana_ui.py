@@ -57,6 +57,12 @@ class Ui_MainWindow(object):
         self.FrontalRightShoulder_label_3.setGeometry(QtCore.QRect(270, 140, 181, 17))
         self.FrontalRightShoulder_label_3.setAlignment(QtCore.Qt.AlignLeading|QtCore.Qt.AlignLeft|QtCore.Qt.AlignVCenter)
         self.FrontalRightShoulder_label_3.setObjectName("FrontalRightShoulder_label_3")
+        self.horizontalSlider = QtWidgets.QSlider(self.tab_6)
+        self.horizontalSlider.setGeometry(QtCore.QRect(350, 320, 160, 16))
+        self.horizontalSlider.setCursor(QtGui.QCursor(QtCore.Qt.ArrowCursor))
+        self.horizontalSlider.setMaximum(180)
+        self.horizontalSlider.setOrientation(QtCore.Qt.Horizontal)
+        self.horizontalSlider.setObjectName("horizontalSlider")
         self.tabWidget.addTab(self.tab_6, "")
         self.tab = QtWidgets.QWidget()
         self.tab.setObjectName("tab")
@@ -412,7 +418,7 @@ class Ui_MainWindow(object):
         MainWindow.setStatusBar(self.statusbar)
 
         self.retranslateUi(MainWindow)
-        self.tabWidget.setCurrentIndex(5)
+        self.tabWidget.setCurrentIndex(0)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
 
     def retranslateUi(self, MainWindow):

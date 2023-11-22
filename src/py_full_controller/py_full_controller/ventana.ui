@@ -1,0 +1,751 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1452</width>
+    <height>915</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTabWidget" name="fullController_tab">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1451</width>
+      <height>871</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>5</number>
+    </property>
+    <widget class="QWidget" name="head_tab">
+     <attribute name="title">
+      <string>/head</string>
+     </attribute>
+     <widget class="QGroupBox" name="headAxialNeck_groupBox">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>341</width>
+        <height>271</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>AxialNeck</string>
+      </property>
+     </widget>
+     <widget class="QGroupBox" name="headFrontalNeck_groupBox">
+      <property name="geometry">
+       <rect>
+        <x>370</x>
+        <y>10</y>
+        <width>341</width>
+        <height>271</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>FrontalNeck</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="rightArm_tab">
+     <attribute name="title">
+      <string>/rightArm</string>
+     </attribute>
+     <widget class="QGroupBox" name="frontalRightShoulder_groupBox">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>341</width>
+        <height>271</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>FrontalRightShoulder</string>
+      </property>
+     </widget>
+     <widget class="QGroupBox" name="sagittalRightShoulder_groupBox">
+      <property name="geometry">
+       <rect>
+        <x>370</x>
+        <y>10</y>
+        <width>341</width>
+        <height>271</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>SagittalRightShoulder</string>
+      </property>
+     </widget>
+     <widget class="QGroupBox" name="axialRightShoulder_groupBox">
+      <property name="geometry">
+       <rect>
+        <x>730</x>
+        <y>10</y>
+        <width>341</width>
+        <height>271</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>AxialRightShoulder</string>
+      </property>
+     </widget>
+     <widget class="QGroupBox" name="frontalRightElbow_groupBox">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>300</y>
+        <width>341</width>
+        <height>271</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>FrontalRightElbow</string>
+      </property>
+     </widget>
+     <widget class="QGroupBox" name="axialRightWrist_groupBox">
+      <property name="geometry">
+       <rect>
+        <x>370</x>
+        <y>300</y>
+        <width>341</width>
+        <height>271</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>AxialRightWrist</string>
+      </property>
+     </widget>
+     <widget class="QGroupBox" name="frontalRightWrist_groupBox">
+      <property name="geometry">
+       <rect>
+        <x>730</x>
+        <y>300</y>
+        <width>341</width>
+        <height>271</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>FrontalRightWrist</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="leftArm_tab">
+     <attribute name="title">
+      <string>/leftArm</string>
+     </attribute>
+     <widget class="QGroupBox" name="sagittalLeftShoulder_groupBox">
+      <property name="geometry">
+       <rect>
+        <x>370</x>
+        <y>10</y>
+        <width>341</width>
+        <height>271</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>SagittalLeftShoulder</string>
+      </property>
+     </widget>
+     <widget class="QGroupBox" name="frontalLeftWrist_groupBox">
+      <property name="geometry">
+       <rect>
+        <x>730</x>
+        <y>300</y>
+        <width>341</width>
+        <height>271</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>FrontalLeftWrist</string>
+      </property>
+     </widget>
+     <widget class="QGroupBox" name="axialLeftShoulder_groupBox">
+      <property name="geometry">
+       <rect>
+        <x>730</x>
+        <y>10</y>
+        <width>341</width>
+        <height>271</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>AxialLeftShoulder</string>
+      </property>
+     </widget>
+     <widget class="QGroupBox" name="frontalLeftShoulder_groupBox">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>341</width>
+        <height>271</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>FrontalLeftShoulder</string>
+      </property>
+     </widget>
+     <widget class="QGroupBox" name="frontalLeftElbow_groupBox">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>300</y>
+        <width>341</width>
+        <height>271</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>FrontalLeftElbow</string>
+      </property>
+     </widget>
+     <widget class="QGroupBox" name="axialLeftWrist_groupBox">
+      <property name="geometry">
+       <rect>
+        <x>370</x>
+        <y>300</y>
+        <width>341</width>
+        <height>271</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>AxialLeftWrist</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="trunk_tab">
+     <attribute name="title">
+      <string>/trunk</string>
+     </attribute>
+     <widget class="QGroupBox" name="frontalTrunk_groupBox">
+      <property name="geometry">
+       <rect>
+        <x>370</x>
+        <y>10</y>
+        <width>341</width>
+        <height>271</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>FrontalTrunk</string>
+      </property>
+     </widget>
+     <widget class="QGroupBox" name="axialTrunk_groupBox">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>341</width>
+        <height>271</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>AxialTrunk</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="rightLeg_tab">
+     <attribute name="title">
+      <string>/rightLeg</string>
+     </attribute>
+     <widget class="QGroupBox" name="frontalRightAnkle_groupBox">
+      <property name="geometry">
+       <rect>
+        <x>370</x>
+        <y>300</y>
+        <width>341</width>
+        <height>271</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>FrontalRightAnkle</string>
+      </property>
+     </widget>
+     <widget class="QGroupBox" name="sagittalRightAnkle_groupBox">
+      <property name="geometry">
+       <rect>
+        <x>730</x>
+        <y>300</y>
+        <width>341</width>
+        <height>271</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>SagittalRightAnkle</string>
+      </property>
+     </widget>
+     <widget class="QGroupBox" name="sagittalRightHip_groupBox">
+      <property name="geometry">
+       <rect>
+        <x>370</x>
+        <y>10</y>
+        <width>341</width>
+        <height>271</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>SagittalRightHip</string>
+      </property>
+     </widget>
+     <widget class="QGroupBox" name="frontalRightHip_groupBox">
+      <property name="geometry">
+       <rect>
+        <x>730</x>
+        <y>10</y>
+        <width>341</width>
+        <height>271</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>FrontalRightHip</string>
+      </property>
+     </widget>
+     <widget class="QGroupBox" name="frontalRightKnee_groupBox">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>300</y>
+        <width>341</width>
+        <height>271</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>FrontalRightKnee</string>
+      </property>
+     </widget>
+     <widget class="QGroupBox" name="axialRightHip_groupBox">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>341</width>
+        <height>271</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>AxialRightHip</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="leftLeg_tab">
+     <attribute name="title">
+      <string>/leftLeg</string>
+     </attribute>
+     <widget class="QGroupBox" name="frontalLeftAnkle_groupBox">
+      <property name="geometry">
+       <rect>
+        <x>370</x>
+        <y>300</y>
+        <width>341</width>
+        <height>271</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>FrontalLeftAnkle</string>
+      </property>
+      <widget class="QLabel" name="velocityAxialLeftHip_label_5">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>90</y>
+         <width>67</width>
+         <height>17</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Velocity</string>
+       </property>
+      </widget>
+      <widget class="QSlider" name="velocityAxialLeftHip_slider_5">
+       <property name="geometry">
+        <rect>
+         <x>140</x>
+         <y>90</y>
+         <width>160</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+      <widget class="QLabel" name="positionAxialLeftHip_label_5">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>50</y>
+         <width>67</width>
+         <height>17</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Position</string>
+       </property>
+      </widget>
+      <widget class="QSlider" name="positionAxialLeftHip_slider_5">
+       <property name="geometry">
+        <rect>
+         <x>140</x>
+         <y>50</y>
+         <width>160</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="axialLeftHip_groupBox">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>341</width>
+        <height>271</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>AxialLeftHip</string>
+      </property>
+      <widget class="QSlider" name="positionAxialLeftHip_slider">
+       <property name="geometry">
+        <rect>
+         <x>140</x>
+         <y>50</y>
+         <width>160</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+      <widget class="QSlider" name="velocityAxialLeftHip_slider">
+       <property name="geometry">
+        <rect>
+         <x>140</x>
+         <y>90</y>
+         <width>160</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+      <widget class="QLabel" name="positionAxialLeftHip_label">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>50</y>
+         <width>67</width>
+         <height>17</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Position</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="velocityAxialLeftHip_label">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>90</y>
+         <width>67</width>
+         <height>17</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Velocity</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="frontalLeftHip_groupBox">
+      <property name="geometry">
+       <rect>
+        <x>730</x>
+        <y>10</y>
+        <width>341</width>
+        <height>271</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>FrontalLeftHip</string>
+      </property>
+      <widget class="QSlider" name="velocityFrontalLeftHip_slider">
+       <property name="geometry">
+        <rect>
+         <x>140</x>
+         <y>90</y>
+         <width>160</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+      <widget class="QSlider" name="positionFrontalLeftHip_slider">
+       <property name="geometry">
+        <rect>
+         <x>140</x>
+         <y>50</y>
+         <width>160</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+      <widget class="QLabel" name="positionFrontalLeftHip_label">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>50</y>
+         <width>67</width>
+         <height>17</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Position</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="velocityFrontalLeftHip_label">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>90</y>
+         <width>67</width>
+         <height>17</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Velocity</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="sagittalLeftHip_groupBox">
+      <property name="geometry">
+       <rect>
+        <x>370</x>
+        <y>10</y>
+        <width>341</width>
+        <height>271</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>SagittalLeftHip</string>
+      </property>
+      <widget class="QSlider" name="velocitySagittalLeftHip_slider">
+       <property name="geometry">
+        <rect>
+         <x>140</x>
+         <y>90</y>
+         <width>160</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+      <widget class="QSlider" name="positionSagittalLeftHip_slider">
+       <property name="geometry">
+        <rect>
+         <x>140</x>
+         <y>50</y>
+         <width>160</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+      <widget class="QLabel" name="positionSagittalLeftHip_label">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>50</y>
+         <width>67</width>
+         <height>17</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Position</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="velocitySagittalLeftHip_label">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>90</y>
+         <width>67</width>
+         <height>17</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Velocity</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="sagittalLeftAnkle_groupBox">
+      <property name="geometry">
+       <rect>
+        <x>730</x>
+        <y>300</y>
+        <width>341</width>
+        <height>271</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>SagittalLeftAnkle</string>
+      </property>
+      <widget class="QLabel" name="velocityAxialLeftHip_label_6">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>90</y>
+         <width>67</width>
+         <height>17</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Velocity</string>
+       </property>
+      </widget>
+      <widget class="QSlider" name="velocityAxialLeftHip_slider_6">
+       <property name="geometry">
+        <rect>
+         <x>140</x>
+         <y>90</y>
+         <width>160</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+      <widget class="QLabel" name="positionAxialLeftHip_label_6">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>50</y>
+         <width>67</width>
+         <height>17</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Position</string>
+       </property>
+      </widget>
+      <widget class="QSlider" name="positionAxialLeftHip_slider_6">
+       <property name="geometry">
+        <rect>
+         <x>140</x>
+         <y>50</y>
+         <width>160</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="frontalLeftKnee_groupBox">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>300</y>
+        <width>341</width>
+        <height>271</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>FrontalLeftKnee</string>
+      </property>
+      <widget class="QSlider" name="velocityFrontalLeftKnee_slider">
+       <property name="geometry">
+        <rect>
+         <x>140</x>
+         <y>90</y>
+         <width>160</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+      <widget class="QSlider" name="positionFrontalLeftKnee_slider">
+       <property name="geometry">
+        <rect>
+         <x>140</x>
+         <y>50</y>
+         <width>160</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+      <widget class="QLabel" name="positionFrontalLeftKnee_label">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>50</y>
+         <width>67</width>
+         <height>17</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Position</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="velocityFrontalLeftKnee_label">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>90</y>
+         <width>67</width>
+         <height>17</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Velocity</string>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1452</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

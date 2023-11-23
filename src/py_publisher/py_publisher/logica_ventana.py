@@ -154,6 +154,8 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         
     def onClickLeftArm_button(self):
 
+        print("HOLA!!!")
+
         leftArmArticulations = [
             'FrontalLeftShoulder', 
             'SagittalLeftShoulder',

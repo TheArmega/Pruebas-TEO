@@ -20,6 +20,7 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
+            'fullControllerWindow_subscriber = py_full_controller.fullControllerWindow_logic:main'
         ],
     },
 )

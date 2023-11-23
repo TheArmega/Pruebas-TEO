@@ -1,12 +1,9 @@
 from .ventana_ui import *
-from PyQt5.QtWidgets import *
-from PyQt5.QtCore import *
-from PyQt5.QtGui import *
+from PyQt5.QtWidgets import QMainWindow, QApplication, QWidget, QPushButton, QAction, QLineEdit, QMessageBox, QSlider
 
 import rclpy
-from .subscriber_member_function import MinimalSubscriber
 
-#from py_slider.py_slider import PySlider
+from .subscriber_member_function import MinimalSubscriber
 
 class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
     def __init__(self, *args, **kwargs):
@@ -156,6 +153,8 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         self.cleanTextBox(rightArmPositionTextBoxes, rightArmSpeedTextBoxes)
         
     def onClickLeftArm_button(self):
+
+        print("HOLA!!!")
 
         leftArmArticulations = [
             'FrontalLeftShoulder', 

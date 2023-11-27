@@ -1,0 +1,31 @@
+[0.878s] Invoking command in '/home/teo/ros2_ws/src/py_full_controller': PYTHONPATH=/home/teo/ros2_ws/build/py_full_controller/prefix_override:/home/teo/ros2_ws/install/py_full_controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/py_full_controller build --build-base /home/teo/ros2_ws/build/py_full_controller/build install --record /home/teo/ros2_ws/build/py_full_controller/install.log --single-version-externally-managed
+[1.062s] running egg_info
+[1.063s] writing ../../build/py_full_controller/py_full_controller.egg-info/PKG-INFO
+[1.063s] writing dependency_links to ../../build/py_full_controller/py_full_controller.egg-info/dependency_links.txt
+[1.063s] writing entry points to ../../build/py_full_controller/py_full_controller.egg-info/entry_points.txt
+[1.063s] writing requirements to ../../build/py_full_controller/py_full_controller.egg-info/requires.txt
+[1.063s] writing top-level names to ../../build/py_full_controller/py_full_controller.egg-info/top_level.txt
+[1.065s] reading manifest file '../../build/py_full_controller/py_full_controller.egg-info/SOURCES.txt'
+[1.066s] writing manifest file '../../build/py_full_controller/py_full_controller.egg-info/SOURCES.txt'
+[1.066s] running build
+[1.067s] running build_py
+[1.067s] copying py_full_controller/fullControllerWindow_logic.py -> /home/teo/ros2_ws/build/py_full_controller/build/lib/py_full_controller
+[1.067s] running install
+[1.067s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[1.067s]   warnings.warn(
+[1.067s] running install_lib
+[1.068s] copying /home/teo/ros2_ws/build/py_full_controller/build/lib/py_full_controller/fullControllerWindow_logic.py -> /home/teo/ros2_ws/install/py_full_controller/lib/python3.10/site-packages/py_full_controller
+[1.069s] byte-compiling /home/teo/ros2_ws/install/py_full_controller/lib/python3.10/site-packages/py_full_controller/fullControllerWindow_logic.py to fullControllerWindow_logic.cpython-310.pyc
+[1.071s]   File "/home/teo/ros2_ws/install/py_full_controller/lib/python3.10/site-packages/py_full_controller/fullControllerWindow_logic.py", line 81
+[1.071s]     self.velocitySagittalLeftAnkle_slider.valueChanged.connect(lambda:self.drlambda:agSlider(self.velocitySagittalLeftAnkle_slider, 'SagittalLeftAnkle'))
+[1.071s]                                                                                    ^
+[1.072s] SyntaxError: invalid syntax
+[1.072s] 
+[1.072s] running install_data
+[1.072s] running install_egg_info
+[1.074s] removing '/home/teo/ros2_ws/install/py_full_controller/lib/python3.10/site-packages/py_full_controller-0.0.0-py3.10.egg-info' (and everything under it)
+[1.074s] Copying ../../build/py_full_controller/py_full_controller.egg-info to /home/teo/ros2_ws/install/py_full_controller/lib/python3.10/site-packages/py_full_controller-0.0.0-py3.10.egg-info
+[1.075s] running install_scripts
+[1.096s] Installing fullControllerWindow_subscriber script to /home/teo/ros2_ws/install/py_full_controller/lib/py_full_controller
+[1.097s] writing list of installed files to '/home/teo/ros2_ws/build/py_full_controller/install.log'
+[1.159s] Invoked command in '/home/teo/ros2_ws/src/py_full_controller' returned '0': PYTHONPATH=/home/teo/ros2_ws/build/py_full_controller/prefix_override:/home/teo/ros2_ws/install/py_full_controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/py_full_controller build --build-base /home/teo/ros2_ws/build/py_full_controller/build install --record /home/teo/ros2_ws/build/py_full_controller/install.log --single-version-externally-managed

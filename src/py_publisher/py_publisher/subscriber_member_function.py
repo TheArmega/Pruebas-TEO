@@ -23,7 +23,9 @@ from yarp_control_msgs.msg import Position
 class MinimalSubscriber(Node):
 
     def __init__(self):
-        super().__init__('rightArm_subscriber')
+
+        super().__init__('fullControl_subscriber')
+
         self.head_publisher_ = self.create_publisher(
             Position,
             'head_msgs/position',
@@ -54,50 +56,27 @@ class MinimalSubscriber(Node):
             'leftLeg_msgs/position',
             10
         )
-        self.position_timer_ = self.create_timer(
-            2.0,
-            self.publish_position
-        )
 
-    def publishArmPosition(self, armArticulations, armPositions, armSpeeds, arm):
+    def publishPosition(self, articulations, positions, speeds, extremity):
         msg = Position()
-        for articulation, position, speed in zip(armArticulations, armPositions, armSpeeds):
+        for articulation, position, speed in zip(articulations, positions, speeds):
             if (position != '' and speed != ''):
                 msg.names = [str(articulation)]
                 msg.positions = [float(position) * (math.pi/180)]
                 msg.ref_velocities = [float(speed)]
-                if (arm == 'right'):
+                if (extremity == 'neck'):
+                    self.head_publisher_.publish(msg)
+                elif (extremity == 'rightArm'):
                     self.rightArm_publisher_.publish(msg)
-                elif (arm == 'left'):
+                elif (extremity == 'lefttArm'):
                     self.leftArm_publisher_.publish(msg)
-
-    def publish_position(self):
-        
-        position = Position()
-
-        print('### Movimiento del brazo derecho de TEO ###\n')
-        print('¿Qué articulación del brazo derecho quieres mover?\n')
-        articulacion = input('1. FrontalRightShoulder\n2. SagittalRightShoulder\n3. AxialRightShoulder\n4. FrontalRightElbow\n5. AxialRightWrist\n6. FrontalRightWrist\n')
-        match articulacion:
-            case '1':
-                position.names = ['FrontalRightShoulder']
-            case '2':
-                position.names = ['SagittalRightShoulder']
-            case '3':
-                position.names = ['AxialRightShoulder']
-            case '4':
-                position.names = ['FrontalRightElbow']
-            case '5':
-                position.names = ['AxialRightWrist']
-            case '6':
-                position.names = ['FrontalRightWrist']   
-
-        grados = input('¿Que posición quieres (grados)?\n') 
-        position.positions = [float(grados) * (math.pi/180)]
-        position.ref_velocities = [0.5]
-        self.rightArm_publisher_.publish(position)
-
-
+                elif (extremity == 'trunk'):
+                    self.trunk_publisher_.publish(msg)
+                elif (extremity == 'rightLeg'):
+                    self.rightLeg_publisher_.publish(msg)
+                elif (extremity == 'leftLeg'):
+                    self.leftLeg_publisher_.publish(msg)
+                    
 def main(args=None):
     rclpy.init(args=args)
 

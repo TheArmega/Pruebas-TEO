@@ -1,0 +1,26 @@
+[1.420s] Invoking command in '/home/armega/ros2_ws/src/py_full_controller': PYTHONPATH=/home/armega/ros2_ws/build/py_full_controller/prefix_override:/home/armega/ros2_ws/install/py_full_controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/py_full_controller build --build-base /home/armega/ros2_ws/build/py_full_controller/build install --record /home/armega/ros2_ws/build/py_full_controller/install.log --single-version-externally-managed
+[1.740s] running egg_info
+[1.741s] writing ../../build/py_full_controller/py_full_controller.egg-info/PKG-INFO
+[1.742s] writing dependency_links to ../../build/py_full_controller/py_full_controller.egg-info/dependency_links.txt
+[1.742s] writing entry points to ../../build/py_full_controller/py_full_controller.egg-info/entry_points.txt
+[1.742s] writing requirements to ../../build/py_full_controller/py_full_controller.egg-info/requires.txt
+[1.742s] writing top-level names to ../../build/py_full_controller/py_full_controller.egg-info/top_level.txt
+[1.745s] reading manifest file '../../build/py_full_controller/py_full_controller.egg-info/SOURCES.txt'
+[1.747s] writing manifest file '../../build/py_full_controller/py_full_controller.egg-info/SOURCES.txt'
+[1.747s] running build
+[1.748s] running build_py
+[1.748s] copying py_full_controller/fullControllerWindow_ui.py -> /home/armega/ros2_ws/build/py_full_controller/build/lib/py_full_controller
+[1.748s] running install
+[1.755s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[1.756s]   warnings.warn(
+[1.756s] running install_lib
+[1.756s] copying /home/armega/ros2_ws/build/py_full_controller/build/lib/py_full_controller/fullControllerWindow_ui.py -> /home/armega/ros2_ws/install/py_full_controller/lib/python3.10/site-packages/py_full_controller
+[1.756s] byte-compiling /home/armega/ros2_ws/install/py_full_controller/lib/python3.10/site-packages/py_full_controller/fullControllerWindow_ui.py to fullControllerWindow_ui.cpython-310.pyc
+[1.766s] running install_data
+[1.766s] running install_egg_info
+[1.769s] removing '/home/armega/ros2_ws/install/py_full_controller/lib/python3.10/site-packages/py_full_controller-0.0.0-py3.10.egg-info' (and everything under it)
+[1.773s] Copying ../../build/py_full_controller/py_full_controller.egg-info to /home/armega/ros2_ws/install/py_full_controller/lib/python3.10/site-packages/py_full_controller-0.0.0-py3.10.egg-info
+[1.774s] running install_scripts
+[1.807s] Installing fullControllerWindow_subscriber script to /home/armega/ros2_ws/install/py_full_controller/lib/py_full_controller
+[1.807s] writing list of installed files to '/home/armega/ros2_ws/build/py_full_controller/install.log'
+[1.873s] Invoked command in '/home/armega/ros2_ws/src/py_full_controller' returned '0': PYTHONPATH=/home/armega/ros2_ws/build/py_full_controller/prefix_override:/home/armega/ros2_ws/install/py_full_controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/py_full_controller build --build-base /home/armega/ros2_ws/build/py_full_controller/build install --record /home/armega/ros2_ws/build/py_full_controller/install.log --single-version-externally-managed

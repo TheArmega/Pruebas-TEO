@@ -1,0 +1,7 @@
+/usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+  warnings.warn(
+  File "/home/teo/ros2_ws/install/py_full_controller/lib/python3.10/site-packages/py_full_controller/fullControllerWindow_logic.py", line 81
+    self.velocitySagittalLeftAnkle_slider.valueChanged.connect(lambda:self.drlambda:agSlider(self.velocitySagittalLeftAnkle_slider, 'SagittalLeftAnkle'))
+                                                                                   ^
+SyntaxError: invalid syntax
+

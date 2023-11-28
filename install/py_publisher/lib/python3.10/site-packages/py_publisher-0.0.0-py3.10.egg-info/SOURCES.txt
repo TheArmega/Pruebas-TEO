@@ -12,6 +12,8 @@ py_publisher/__init__.py
 py_publisher/logica_ventana.py
 py_publisher/subscriber_member_function.py
 py_publisher/ventana_ui.py
+py_publisher/py_slider/__init__.py
+py_publisher/py_slider/py_slider.py
 resource/py_publisher
 test/test_copyright.py
 test/test_flake8.py

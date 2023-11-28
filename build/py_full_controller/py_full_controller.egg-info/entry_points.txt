@@ -1,0 +1,3 @@
+[console_scripts]
+fullControllerWindow_subscriber = py_full_controller.fullControllerWindow_logic:main
+
